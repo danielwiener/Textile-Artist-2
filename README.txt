@@ -1,0 +1,1 @@
+Child theme of portfolium theme by http://www.wpshower.com modified by Daniel Wiener for a textile artist.

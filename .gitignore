@@ -1,0 +1,10 @@
+.htaccess
+.DS_Store?
+uploads/*
+themes/twentyten/*
+themes/twentyeleven/*
+themes/base/*
+themes/portfolium/*
+themes/index.php
+plugins/*
+index.php
