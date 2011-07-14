@@ -1,1 +1,1 @@
-Child theme of portfolium theme by http://www.wpshower.com modified by Daniel Wiener for a textile artist.
+A Wordpress site for Liz Collins, an artist working with textiles, completely redesigned for her art Projects and design Collections. It will probably be a child theme of Twenty Eleven. http://lizcollins.com/lc/ or http://lizcollins.com/
