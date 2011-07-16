@@ -87,21 +87,22 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 */
 
 #container {
-	float: left;
-	margin: 0 -240px 0 0;
-	width: 100%;
+	float: left;  
+	margin: 0 0 0 0;
+	width: 640px;
 }
 #content {
-	margin: 0 280px 0 20px;
+	margin: 0 0 0 20px;
 }
 #primary,
 #secondary {
-	float: right;
+	float: left;
 	overflow: hidden;
-	width: 220px;
+	width: 298px; 
+	border: 1px solid red;
 }
 #secondary {
-	clear: right;
+	/*clear: right;*/
 }
 #footer {
 	clear: both;
