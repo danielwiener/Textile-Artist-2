@@ -19,8 +19,8 @@
 	 */
 ?>          
 
-		<h3 class="widget-title">Projects</h3> 
-		<h4>Knitting Nation</h4>
+		<h2 class="widget-title">Projects</h2> 
+		<h3><a href="/lc/knitting-nation/">Knitting Nation</a></h3>
 		  <ul class="xoxo"> 
 			<?php
 			$args = array(

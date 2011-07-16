@@ -13,7 +13,8 @@ Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-backgr
 /* =Colors================================================================================
 
 Page Background: #F8F3FA
-Logos, Menu, Headlines: #384D55 
+Logos, Menu, Headlines: #384D55
+Lighter Slate Blue for Menu, Sidebar: #98A1A9
 
 ================================================================================  */ 
 
@@ -90,7 +91,6 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	float: left;  
 	margin: 0 0 0 0;
 	width: 800px;
-	border: 1px solid red;
 }
 #content {
 	margin: 0 0 0 0px;
@@ -99,10 +99,9 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #secondary {
 	float: left;
 	overflow: hidden;
-	width: 155px; 
+	width: 140px; /*total size of sidebar is 155px, left padding of 15px for .widget-area makes it 155 find it in Main sidebars*/
 	padding: 0;
 	margin: 0;
-		border: 1px solid green;
 }
 #secondary {
 	/*clear: right;*/
@@ -162,7 +161,6 @@ h3#reply-title,
 .page-title,
 .pingback p,
 .reply,
-.widget-title,
 .wp-caption-text {
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
@@ -176,7 +174,7 @@ code {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 } 
 
-#site-title, #access .menu, #access div.menu ul, #access a {
+#site-title, #access .menu, #access div.menu ul, #access a, .widget-title, #main .widget-area {
 	  font-family: ZillahModernRegular,"Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif !important; 
 }
 
@@ -370,7 +368,7 @@ body {
 		font-size: 56px;
 		letter-spacing: 0.04em;
 		line-height: 36px;
-		margin: 0 0 18px 0;
+		margin: 0 0 18px 15px;
 		width: 300px;
 		text-transform: uppercase; 
 /*		border: 1px solid green;*/
@@ -486,7 +484,6 @@ div.menu li {
 	clear: both;
 	overflow: hidden;
 	padding: 0;
-	border: 1px solid #999;
 }
 #content {
 	margin-bottom: 36px;
@@ -1154,8 +1151,13 @@ h3#reply-title {
 	margin: 0 0 18px 0;
 }
 .widget-title {
-	color: #222;
-	font-weight: bold;
+	color: #98A1A9;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 36px;
+	padding: 0;
+	margin: 20px 0 15px 0;
+	text-transform: uppercase;
 }
 .widget-area a:link,
 .widget-area a:visited {
@@ -1163,7 +1165,7 @@ h3#reply-title {
 }
 .widget-area a:active,
 .widget-area a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 .widget-area .entry-meta {
 	font-size: 11px;
@@ -1212,9 +1214,22 @@ h3#reply-title {
 	height: 11px;
 }
 
-/* Main sidebars */
+/* Main sidebars */ 
+#main .widget-area {
+	padding-left: 15px;
+}
+
+#main .widget-area h3, #main .widget-area h3 a { 
+	color: #98A1A9;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: .03em;
+	font-weight: normal;
+	margin: 15px 0 0 4px;
+	}
+
 #main .widget-area ul {
-	margin-left: 0;
+	margin-left: 20px;
 	padding: 0 20px 0 0;
 }
 #main .widget-area ul ul {
