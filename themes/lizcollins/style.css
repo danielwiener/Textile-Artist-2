@@ -1236,7 +1236,19 @@ h3#reply-title {
 	border: none;
 	margin-left: 1.3em;
 	padding: 0;
-}
+} 
+
+#main .widget-area ul.secondary_widget_title li a:link, #main .widget-area ul.secondary_widget_title li a:visited {
+	color: #98A1A9;
+	font-size: 17px;
+	letter-spacing: .03em;
+	font-weight: normal;
+} 
+
+#main .widget-area ul.secondary_widget_title li a:hover, #main .widget-area ul.secondary_widget_title li a:active, #main .widget-area ul.secondary_widget_title li .current {
+	color: #384D55;
+	}
+
 #primary {
 }
 #secondary {
