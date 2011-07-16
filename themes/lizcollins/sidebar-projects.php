@@ -19,12 +19,14 @@
 	 */
 ?>          
 
-		<h3 class="widget-title">Projects</h3>
+		<h3 class="widget-title">Projects</h3> 
+		<h3 class="widget-title">Knitting Nation</h3>
+		<li> <ul>
 			<?php
 			$args = array(
 					'post_type' => 'page', 
 					'post_status' => 'publish',
-					'post_parent' => 24,  //this will change in the remote version
+					'post_parent' => 40,  //this will change in the remote version
 					);
 				global $post;
 				$program_pages = get_posts($args);
@@ -33,7 +35,22 @@
 				 ?>
 				    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 				 <?php endforeach; ?>
-			
+			     </ul></li>     
+				<li> <ul>
+					<?php
+					$args = array(
+							'post_type' => 'page', 
+							'post_status' => 'publish',
+							'post_parent' => 24,  //this will change in the remote version
+							);
+						global $post;
+						$program_pages = get_posts($args);
+						foreach($program_pages as $post) :
+						   setup_postdata($post);
+						 ?>
+						    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+						 <?php endforeach; ?>
+					     </ul></li>
 			</ul>
 		</div><!-- #primary .widget-area -->
 

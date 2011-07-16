@@ -3,3 +3,6 @@ Setting up for the new site, trying out Galleria.
 
 2011-07-14
 On Tuesday, last, Liz accepted the design so it is a go!
+
+2011-07-16
+Adding left sidebar, getting the list of links. Knitting Nation is one Parent and Projects is the other. Easier to iterate through 2 different and separate arrays.
