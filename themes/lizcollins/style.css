@@ -89,17 +89,20 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #container {
 	float: left;  
 	margin: 0 0 0 0;
-	width: 640px;
+	width: 800px;
+	border: 1px solid red;
 }
 #content {
-	margin: 0 0 0 20px;
+	margin: 0 0 0 0px;
 }
 #primary,
 #secondary {
 	float: left;
 	overflow: hidden;
-	width: 298px; 
-	border: 1px solid red;
+	width: 155px; 
+	padding: 0;
+	margin: 0;
+		border: 1px solid green;
 }
 #secondary {
 	/*clear: right;*/
@@ -188,13 +191,13 @@ div.menu,
 #main,
 #wrapper {
 	margin: 0 auto;
-	width: 940px;
+	width: 965px;
 }
 
 #wrapper {
 	background: #F8F3FA;
 	margin-top: 0; 
-	padding: 0 20px;
+	padding: 0;
 } 
 
 
@@ -482,7 +485,8 @@ div.menu li {
 #main {
 	clear: both;
 	overflow: hidden;
-	padding: 40px 0 0 0;
+	padding: 0;
+	border: 1px solid #999;
 }
 #content {
 	margin-bottom: 36px;

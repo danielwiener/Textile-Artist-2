@@ -9,7 +9,7 @@
 ?>
 
 		<div id="primary" class="widget-area" role="complementary">
-			<ul class="xoxo">
+		   
 
 <?php
 	/* When we call the dynamic_sidebar() function, it'll spit out
@@ -20,8 +20,8 @@
 ?>          
 
 		<h3 class="widget-title">Projects</h3> 
-		<h3 class="widget-title">Knitting Nation</h3>
-		<li> <ul>
+		<h4>Knitting Nation</h4>
+		  <ul class="xoxo"> 
 			<?php
 			$args = array(
 					'post_type' => 'page', 
@@ -35,8 +35,8 @@
 				 ?>
 				    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 				 <?php endforeach; ?>
-			     </ul></li>     
-				<li> <ul>
+			     </ul>     
+			     <ul class="xoxo"> 
 					<?php
 					$args = array(
 							'post_type' => 'page', 
@@ -50,7 +50,7 @@
 						 ?>
 						    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 						 <?php endforeach; ?>
-					     </ul></li>
+					     
 			</ul>
 		</div><!-- #primary .widget-area -->
 
