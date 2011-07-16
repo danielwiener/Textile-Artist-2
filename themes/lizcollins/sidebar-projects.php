@@ -24,9 +24,11 @@
 		  <ul class="xoxo"> 
 			<?php
 			$args = array(
-					'post_type' => 'page', 
-					'post_status' => 'publish',
-					'post_parent' => 40,  //this will change in the remote version
+					'post_type'		=> 'page', 
+					'post_status'	=> 'publish',
+					'post_parent'	=> 40,  //this will change in the remote version
+					'orderby'		=> 'menu_order',
+					'order'			=> 'ASC'
 					);
 				global $post;
 				$program_pages = get_posts($args);
