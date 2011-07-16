@@ -21,7 +21,7 @@
 
 		<h2 class="widget-title">Projects</h2> 
 		<h3><a href="/lc/knitting-nation/">Knitting Nation</a></h3>
-		  <ul class="xoxo"> 
+		  <ul class="knitting_nation"> 
 			<?php
 			$args = array(
 					'post_type'		=> 'page', 
