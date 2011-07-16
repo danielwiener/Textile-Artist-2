@@ -20,7 +20,7 @@
 ?>          
 
 		<h2 class="widget-title">Projects</h2> 
-		<h3><a href="/lc/knitting-nation/">Knitting Nation</a></h3>
+		<h3><a href="<?php bloginfo('url'); ?>/knitting-nation/">Knitting Nation</a></h3>
 		  <ul class="secondary_widget_title"> 
 			<?php
 			$args = array(
