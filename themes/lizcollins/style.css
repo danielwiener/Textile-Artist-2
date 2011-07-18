@@ -739,21 +739,27 @@ body.page .edit-link {
 }
 
 #content #image_grid {
-	padding: 0 0 0 16px;
-	/*border: 1px solid #999;*/
-	font-family: Helvetica, Arial, sans-serif;
+	padding: 0;
 	margin: 0 auto;
 	text-align: center;
 	}
 
+#content #image_grid img {
+	padding: 0;
+	margin: 0;
+}
+
 #content #image_grid ul {
 list-style: none;
+margin: 0;
+padding: 0;
 }
 
 #content #image_grid ul li {
 	float: left;
-	padding: 0 20px 10px 0;
-	text-align: center;
+	padding: 0;
+	padding-right: 10px;
+	padding-bottom: 10px;
 	/*border: 1px solid #999;*/
 }
 

@@ -23,15 +23,23 @@
 	if ( $images ) :
 		//$total_images = count( $images );
 	    //$image = array_shift( $images );
+		$i = 0;
 		?>
-		<ul>
 		<?php foreach ($images as $image): ?>
 		<?php $image_img_tag = wp_get_attachment_image( $image->ID, 'thumbnail' );  
 		$img_url = wp_get_attachment_url($image->ID); // url of the full size image.
-		?>
-		<li><a href="<?php echo $img_url; ?>"><?php echo $image_img_tag; ?></a></li>   
-		<?php endforeach ?>
-		 </ul>
+		?> 
+		
+			<?php if ($i%4==0): ?>
+				<ul>
+			<?php endif ?>
+		      <li><a href="<?php echo $img_url; ?>"><?php echo $image_img_tag; ?></a></li> 
+		    <?php if ($i%4==3): ?>
+				</ul>
+			<?php endif ?>
+		 <?php $i++;   ?>
+		<?php endforeach; ?>
+
   
 
 <?php endif; ?> 
