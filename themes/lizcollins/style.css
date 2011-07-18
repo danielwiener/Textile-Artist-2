@@ -764,7 +764,7 @@ div.dw_description {
 	position:absolute; /* absolute position (so we can position it where we want)*/
 	/*bottom:6px;*/ /* position will be on bottom */
 	top: 350px;
-	left:0px;
+  /*  left:0px; */  
 	display:none; /* hide it */
 	/* styling bellow */
 	background-color:white;
@@ -772,7 +772,7 @@ div.dw_description {
 	font-size: 60px;
 	line-height: 90px;
 	color:black;
-	width: 482px;  
+	width: 472px;  
 
 } 
 /*div.dw_description a:link, div.dw_description a:visited{
@@ -782,10 +782,10 @@ div.dw_description {
 div.dw_description a:hover, div.dw_description a:active{
 		 color: #aaa; 
 		}
-
+ */
 div.dw_description_content{
 	padding:10px;
-}   */
+}   
 
 /* =Image Grid
 -------------------------------------------------------------- */

@@ -1,5 +1,5 @@
 // http://web.enavu.com/tutorials/making-image-captions-using-jquery/  
-jQuery(document).ready(function($){
+jQuery(window).ready(function($){
 	//for each description div...
 	$('div.dw_description').each(function(){
 		//...set the opacity to 0...
