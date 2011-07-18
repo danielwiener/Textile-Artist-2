@@ -7,9 +7,9 @@
  * @since Liz Collins 1.0
  */
 ?>       
-<?php global $post;  ?>
+<?php global $post; ?>
 
-		<div id="primary" class="widget-area sock_monkeys" role="complementary">
+		<div id="primary" class="widget-area <?php echo $post->post_name; ?>" role="complementary">
 		   
 
 <?php
