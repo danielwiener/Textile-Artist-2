@@ -131,6 +131,11 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 	width: 900px;
 }
 
+.full-page #content {
+	margin: 0 0 0 10px;
+	width: 945px; 
+}
+
 
 /* =Fonts
 -------------------------------------------------------------- */
