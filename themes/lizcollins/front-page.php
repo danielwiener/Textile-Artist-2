@@ -15,10 +15,10 @@
 get_header(); ?>
 		<div id="container" class="full-page">
 			<div id="content" role="main">
-              
-			<?php
-				get_template_part( 'content', 'page' );
-			?>
+				<div id="front-page">
+				     <a href="/lc/collections/some_collection" title="sometitle"><img src="<?php bloginfo('stylesheet_directory') ?>/images/collections.jpg" /></a> 
+					 <a href="/lc/projects/knitting-nation/one" title="Knitting Nation One"><img src="<?php bloginfo('stylesheet_directory') ?>/images/projects.jpg" /></a> 
+				</div>
 			</div><!-- #content -->
 		</div><!-- #container -->
 
