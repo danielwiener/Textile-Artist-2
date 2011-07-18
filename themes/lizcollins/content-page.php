@@ -6,9 +6,10 @@
  * @subpackage Liz Collins
  * @since Liz Collins 1.0
  */
-?>
+?>  
+
 <div id="image_grid">
-<?php   
+	<?php   
 		$image = '';
 		$args = array(
 			'post_parent' => $post->ID,
@@ -20,30 +21,17 @@
 			'post_status' => 'inherit'
 		);
 		$images = get_children( $args );
-	if ( $images ) :
-		//$total_images = count( $images );
-	    //$image = array_shift( $images );
-		$i = 0;
-		?>
-		<?php foreach ($images as $image): ?>
-		<?php $image_img_tag = wp_get_attachment_image( $image->ID, 'thumbnail' );  
-		$img_url = wp_get_attachment_url($image->ID); // url of the full size image.
-		?> 
-		
-			<?php if ($i%4==0): ?>
-				<ul>
-			<?php endif ?>
-		      <li><a href="<?php echo $img_url; ?>"><?php echo $image_img_tag; ?></a></li> 
-		    <?php if ($i%4==3): ?>
-				</ul>
-			<?php endif ?>
-		 <?php $i++;   ?>
-		<?php endforeach; ?>
-
-  
-
-<?php endif; ?> 
+			if ( $images ) :
+				?><ul>
+					<?php foreach ($images as $image): ?>
+						<?php $image_img_tag = wp_get_attachment_image( $image->ID, 'thumbnail' );  
+						$img_url = wp_get_attachment_url($image->ID); // url of the full size image. ?> 
+				      	  <li><a href="<?php echo $img_url; ?>"><?php echo $image_img_tag; ?></a></li> 
+					<?php endforeach; ?>
+					</ul>
+			  <?php endif; ?> 
 </div> 
+
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
