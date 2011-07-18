@@ -47,7 +47,8 @@ if ( ! function_exists( 'twentyten_setup' ) ):
  * @uses register_nav_menus() To add support for navigation menus.
  * @uses add_editor_style() To style the visual editor.
  * @uses load_theme_textdomain() For translation/localization support.
- * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
+ * @uses set_post_thumbnail_size() To set a custom post thumbnail size.  
+ * @uses add_image_size() To set more sizes.  
  *
  * @since Liz Collins 1.0
  */

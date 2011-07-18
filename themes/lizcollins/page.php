@@ -16,15 +16,11 @@ get_header(); ?>
 <?php get_sidebar('projects'); ?> 
 		<div id="container">
 			<div id="content" role="main">
-
+            <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>   
 			<?php
-			/* Run the loop to output the page.
-			 * If you want to overload this in a child theme then include a file
-			 * called loop-page.php and that will be used instead.
-			 */
-			get_template_part( 'loop', 'page' );
+				get_template_part( 'content', 'page' );
 			?>
-
+            <?php endwhile; // end of the loop. ?> 
 			</div><!-- #content -->
 		</div><!-- #container -->
 
