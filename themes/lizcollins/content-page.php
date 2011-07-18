@@ -8,31 +8,31 @@
  */
 ?>  
 
-<div id="image_grid">
-	<?php   
-		$image = '';
-		$args = array(
-			'post_parent' => $post->ID,
-			'post_type' => 'attachment',
-			'post_mime_type' => 'image',
-			'orderby' => 'menu_order',
-			'order' => 'ASC',
-			'numberposts' => 16,
-			'post_status' => 'inherit'
-		);
-		$images = get_children( $args );
-			if ( $images ) :
-				?><ul>
-					<?php foreach ($images as $image): ?>
-						<?php $image_img_tag = wp_get_attachment_image( $image->ID, 'thumbnail' );  
-						$img_url = wp_get_attachment_url($image->ID); // url of the full size image. ?> 
-				      	  <li><a href="<?php echo $img_url; ?>"><?php echo $image_img_tag; ?></a></li> 
-					<?php endforeach; ?>
-					</ul>
-			  <?php endif; ?> 
-</div> 
 
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?> 
+		<div id="image_grid">
+			<?php 	 
+				$image = '';
+				$args = array(
+					'post_parent' => $post->ID,
+					'post_type' => 'attachment',
+					'post_mime_type' => 'image',
+					'orderby' => 'menu_order',
+					'order' => 'ASC',
+					'numberposts' => -1,
+					'post_status' => 'inherit'
+				);
+				$images = get_children( $args );
+					if ( $images ) :
+						?><ul>
+							<?php foreach ($images as $image): ?>
+								<?php $image_img_tag = wp_get_attachment_image( $image->ID, 'thumbnail' );  
+								$img_url = wp_get_attachment_url($image->ID); // url of the full size image. ?> 
+						      	  <li><a href="<?php echo $img_url; ?>"><?php echo $image_img_tag; ?></a></li> 
+							<?php endforeach; ?>
+							</ul>
+					  <?php endif; ?> 
+		</div>
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  
