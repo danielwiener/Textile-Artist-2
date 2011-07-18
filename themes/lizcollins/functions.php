@@ -80,7 +80,9 @@ function twentyten_setup() {
 	) );
 
 	//I will change this as needed and add more sizes
-	set_post_thumbnail_size( 150, 150, true );
+	set_post_thumbnail_size( 190, 190, true ); 
+	add_image_size('pinky', 40, 40, true); // for pinky previews
+	add_image_size('tn-250', 250, 250, true); // just in case
 
 	
 }
