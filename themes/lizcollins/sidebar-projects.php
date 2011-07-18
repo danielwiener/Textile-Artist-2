@@ -6,9 +6,10 @@
  * @subpackage Liz Collins
  * @since Liz Collins 1.0
  */
-?>
+?>       
+<?php global $post;  ?>
 
-		<div id="primary" class="widget-area reflective" role="complementary">
+		<div id="primary" class="widget-area sock_monkeys" role="complementary">
 		   
 
 <?php
