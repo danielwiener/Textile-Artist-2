@@ -754,7 +754,39 @@ body.page .edit-link {
 	padding: 0;
 	margin: 0;
 	float: left;
+} 
+
+/* =text overlay css for Press
+-------------------------------------------------------------- */   
+div.dw_wrapper {
+	position:relative; /* important(so we can absolutely position the description div */ 
 }
+div.dw_description {
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	/*bottom:6px;*/ /* position will be on bottom */
+	top: 350px;
+	left:0px;
+	display:none; /* hide it */
+	/* styling bellow */
+	background-color:white;
+	font-family: 'tahoma';
+	font-size: 60px;
+	line-height: 90px;
+	color:black;
+	width: 482px;  
+
+} 
+/*div.dw_description a:link, div.dw_description a:visited{
+	 color: #99CCFF; 
+	} 
+
+div.dw_description a:hover, div.dw_description a:active{
+		 color: #aaa; 
+		}
+
+div.dw_description_content{
+	padding:10px;
+}   */
 
 /* =Image Grid
 -------------------------------------------------------------- */

@@ -94,4 +94,31 @@ function twentyten_admin_header_style() {
 // do nothing
 }
 endif;
+
+// smart jquery inclusion 
+//http://digwp.com/2010/03/wordpress-functions-php-template-custom-functions/ 
+function dw_add_js_scripts() {
+	if (!is_admin()) {
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false);
+		wp_enqueue_script('jquery'); 
+	
+		   // wp_register_script('dw_slideshow',
+		   // 		       get_bloginfo('stylesheet_directory') . '/js/dw_slideshow.js',
+		   // 		       array('jquery'),
+		   // 		       '1.0' ); 
+		   // enqueue the script
+		   // wp_enqueue_script('dw_slideshow');
+		   // register your script location, dependencies and version
+		   //then if press page add the text overlay js
+		   // can't get the is_page('press') to work. don't know why. try again later
+		   wp_register_script('dw_text_overlay',
+		       get_bloginfo('stylesheet_directory') . '/js/dw_text_overlay.js',
+		       array('jquery'),
+		       '1.0' ); 
+		wp_enqueue_script('dw_text_overlay');
+	  }       
+} 
+//also need to figure out how do this with less repitition, more elegantly
+add_action('init', 'dw_add_js_scripts');
 ?> 
