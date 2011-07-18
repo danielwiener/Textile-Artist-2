@@ -1293,8 +1293,15 @@ h3#reply-title {
 	color: #384D55;
 	}        
 
-#primary {
-}
+#primary { 
+	height: 632px;
+	border: 1px solid red;
+}  
+
+#primary.reflective {
+	background: #F8F3FA url('images/reflective.jpg') no-repeat 0px 80px;
+}  
+
 #secondary {
 }
 

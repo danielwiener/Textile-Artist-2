@@ -8,7 +8,7 @@
  */
 ?>
 
-		<div id="primary" class="widget-area" role="complementary">
+		<div id="primary" class="widget-area reflective" role="complementary">
 		   
 
 <?php
