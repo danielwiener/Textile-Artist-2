@@ -14,3 +14,6 @@ Adding left sidebar, getting the list of links. Knitting Nation is one Parent an
 2011-07-18
 formatted and did layout for thumbnail images for Projects (and collections) 
 designed and added front page.
+
+2011-07-19
+Added highlighting to sidebar
