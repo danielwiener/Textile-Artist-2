@@ -758,7 +758,8 @@ body.page .edit-link {
 /* =text overlay css for Press
 -------------------------------------------------------------- */   
 div.dw_wrapper {
-	position:relative; /* important(so we can absolutely position the description div */ 
+	position:relative; /* important(so we can absolutely position the description div */
+		float: left; 
 }
 div.dw_description {
 	position:absolute; /* absolute position (so we can position it where we want)*/
@@ -768,7 +769,7 @@ div.dw_description {
 	display:none; /* hide it */
 	/* styling bellow */
 	background-color:white;
-	font-family: 'tahoma';
+	font-family: 'ZillahModernRegular';
 	font-size: 60px;
 	line-height: 90px;
 	color:black;
