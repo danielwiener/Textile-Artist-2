@@ -344,15 +344,15 @@ body {
 		-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
 		padding: 2px;
 	}
-	a:link {
+	a:link, a:visited {
 		color: #D31924;
+		text-decoration: none;
 	}
-	a:visited {
-		color: #D31924;
-	}
+	
 	a:active,
 	a:hover {
 		color: #384D55;
+		text-decoration: none;
 	}
 
 	/* Text meant only for screen readers */
