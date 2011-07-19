@@ -771,9 +771,10 @@ div.dw_description {
 	background-color:white;
 	font-family: 'ZillahModernRegular';
 	font-size: 60px;
-	line-height: 90px;
-	color:black;
-	width: 472px;  
+	line-height: 70px;
+	color:#384D55;
+	width: 472px;
+	text-transform: uppercase;  
 
 } 
 /*div.dw_description a:link, div.dw_description a:visited{
@@ -784,9 +785,24 @@ div.dw_description a:hover, div.dw_description a:active{
 		 color: #aaa; 
 		}
  */
-div.dw_description_content{
+div.dw_description_content {
 	padding:10px;
-}   
+}
+
+div.dw_description_content a:link, div.dw_description_content a:visited, div.dw_description_content2 a:link, div.dw_description_content2 a:visited {
+	   color:#384D55;
+	   text-decoration: none;
+}
+
+div.dw_description_content a:hover, div.dw_description_content a:active, div.dw_description_content2 a:hover, div.dw_description_content2 a:active {
+	   color:#D31924;
+	   text-decoration: none;
+}
+
+div.dw_description_content2 {
+    text-align: right;  
+	padding:10px;
+}  
 
 /* =Image Grid
 -------------------------------------------------------------- */
