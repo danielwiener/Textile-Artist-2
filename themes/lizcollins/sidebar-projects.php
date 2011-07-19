@@ -18,10 +18,13 @@
 	 * then the sidebar simply doesn't exist, so we'll hard-code in
 	 * some default sidebar stuff just in case.
 	 */
+		global $post;
+	   	$this_post_title = $post->post_title;
+        $knitting_nation_class = ($post->post_parent == 40 ) ? 'class="current_page"' : '' ;
 ?>          
 
 		<h2 class="widget-title">Projects</h2> 
-		<h3><a href="<?php bloginfo('url'); ?>/knitting-nation/">Knitting Nation</a></h3>
+		<h3 <?php echo $knitting_nation_class ?>><a href="<?php bloginfo('url'); ?>/knitting-nation/">Knitting Nation</a></h3>
 		  <ul class="secondary_widget_title"> 
 			<?php
 			$args = array(
@@ -31,12 +34,14 @@
 					'orderby'		=> 'menu_order',
 					'order'			=> 'ASC'
 					);
-				global $post;
-				$program_pages = get_posts($args);
+ 
+ 				$program_pages = get_posts($args);
 				foreach($program_pages as $post) :
 				   setup_postdata($post);
+			   $current_page_class = ($post->post_title == $this_post_title) ? 'class="current_page"' : '' ;
+				
 				 ?>
-				    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+				    <li <?php echo $current_page_class ?>><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 				 <?php endforeach; ?>
 			     </ul>     
 			     <ul class="xoxo"> 
@@ -50,8 +55,9 @@
 						$program_pages = get_posts($args);
 						foreach($program_pages as $post) :
 						   setup_postdata($post);
+						$current_page_class = ($post->post_title == $this_post_title) ? 'class="current_page"' : '' ;
 						 ?>
-						    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+						    <li <?php echo $current_page_class ?>><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 						 <?php endforeach; ?>
 					     
 			</ul>

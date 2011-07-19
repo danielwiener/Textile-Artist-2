@@ -1260,10 +1260,12 @@ h3#reply-title {
 .widget-area a:link,
 .widget-area a:visited {
 	text-decoration: none;
+	color: #98A1A9;
 }
 .widget-area a:active,
 .widget-area a:hover {
 	text-decoration: none;
+	color: #384D55;
 }
 .widget-area .entry-meta {
 	font-size: 11px;
@@ -1317,15 +1319,19 @@ h3#reply-title {
 	padding-left: 15px;
 }
 
-#main .widget-area h3, #main .widget-area h3 a { 
+#main .widget-area h3, #main .widget-area h3 a:link,  #main .widget-area h3 a:visited { 
 	color: #98A1A9;
 	font-size: 20px;
 	text-transform: uppercase;
 	letter-spacing: .03em;
 	font-weight: normal;
 	margin: 15px 0 0 4px;
+	text-decoration: none;
 	}
-
+ 
+#main .widget-area h3 a:hover, #main .widget-area h3 a:active { 
+		color: #384D55;
+    }
 #main .widget-area ul {
 
 	padding: 0 20px 0 0;
@@ -1361,6 +1367,11 @@ h3#reply-title {
 #main .widget-area ul.xoxo li a:hover, #main .widget-area ul.xoxo li a:active, #main .widget-area ul.xoxo li .current {
 	color: #384D55;
 	}        
+
+#main .widget-area li.current_page a:link, #main .widget-area li.current_page a:visited, #main .widget-area h3.current_page a:link, #main .widget-area h3.current_page a:visited {
+	color: #384D55 !important;
+ /*   border: 1px solid #999;*/ 
+}
 
 #primary { 
 	height: 632px; /*may have to change experimentally*/
