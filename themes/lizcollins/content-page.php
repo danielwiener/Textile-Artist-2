@@ -32,7 +32,7 @@
 							<?php endforeach; ?>
 							</ul>
 					  <?php endif; ?> 
-		</div>
+		</div><br clear="both">
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  
