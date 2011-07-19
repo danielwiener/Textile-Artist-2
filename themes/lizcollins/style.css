@@ -15,6 +15,7 @@ Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-backgr
 Page Background: #F8F3FA
 Logos, Menu, Headlines: #384D55
 Lighter Slate Blue for Menu, Sidebar: #98A1A9
+SockMonkey Red for Entry-Title AND text links: #D31924 
 
 ================================================================================  */ 
 
@@ -159,7 +160,6 @@ h3#reply-title,
 .entry-content tr th,
 .entry-content thead th,
 .entry-meta,
-.entry-title,
 .entry-utility,
 #respond label,
 .navigation,
@@ -179,7 +179,7 @@ code {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 } 
 
-#site-title, #access .menu, #access div.menu ul, #access a, .widget-title, #main .widget-area {
+#site-title, #access .menu, #access div.menu ul, #access a, .widget-title, #main .widget-area, .entry-title {
 	  font-family: ZillahModernRegular,"Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif !important; 
 }
 
@@ -345,14 +345,14 @@ body {
 		padding: 2px;
 	}
 	a:link {
-		color: #0066cc;
+		color: #D31924;
 	}
 	a:visited {
-		color: #743399;
+		color: #D31924;
 	}
 	a:active,
 	a:hover {
-		color: #ff4b33;
+		color: #384D55;
 	}
 
 	/* Text meant only for screen readers */
@@ -595,11 +595,12 @@ div.menu li {
 	color: #ff4b33;
 }
 #content .entry-title {
-	color: #000;
-	font-size: 21px;
-	font-weight: bold;
+	color:#D31924;
+	font-size: 40px;
+	letter-spacing: .05em;
 	line-height: 1.3em;
 	margin-bottom: 0;
+	text-transform: uppercase;
 }
 .entry-title a:link,
 .entry-title a:visited {
@@ -746,15 +747,6 @@ body.page .edit-link {
 
 /* =Front Page
 -------------------------------------------------------------- */ 
-#front-page {
-	margin: 0;
-	padding: 0;
-	
-}
-#front-page img {
-
-	float: left;
-} 
 
 /* =text overlay css for Press
 -------------------------------------------------------------- */   
