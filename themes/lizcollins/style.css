@@ -144,7 +144,6 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 body,
 input,
 textarea,
-.page-title span,
 .pingback a.url {
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
@@ -163,7 +162,6 @@ h3#reply-title,
 .entry-utility,
 #respond label,
 .navigation,
-.page-title,
 .pingback p,
 .reply,
 .wp-caption-text {
@@ -179,7 +177,7 @@ code {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 } 
 
-#site-title, #access .menu, #access div.menu ul, #access a, .widget-title, #main .widget-area, .entry-title {
+#site-title, #access .menu, #access div.menu ul, #access a, .widget-title, #main .widget-area, .entry-title, #content h1.page-title, .page-title span {
 	  font-family: ZillahModernRegular,"Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif !important; 
 }
 
@@ -572,26 +570,30 @@ div.menu li {
 .single .hentry {
 	margin: 0 0 36px 0;
 }
-.page-title {
-	color: #000;
-	font-size: 14px;
-	font-weight: bold;
-	margin: 0 0 36px 0;
+h1.page-title {
+	color: #D31924 !important;
+	font-size: 40px;
+	letter-spacing: .05em;
+	line-height: 1.3em;
+	text-transform: uppercase;
+	padding: 0 0 0 65px; 
 }
 .page-title span {
-	color: #333;
-	font-size: 16px;
-	font-style: italic;
-	font-weight: normal;
+	color: #D31924;
+	font-size: 40px;
+	letter-spacing: .05em;
+	line-height: 1.3em;
+	text-transform: uppercase;
 }
 .page-title a:link,
 .page-title a:visited {
-	color: #888;
+	color: #384D55;
 	text-decoration: none;
 }
 .page-title a:active,
 .page-title a:hover {
-	color: #ff4b33;
+	color: #98A1A9; 
+	text-decoration: none;
 }
 #content .entry-title {
 	color:#D31924;
