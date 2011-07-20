@@ -38,7 +38,7 @@
  
 						<h1 class="entry-title">
 						<?php if ($post->post_parent == 40): ?>
-						 Knitting Nation    
+						 Knitting Nation Phase    
 						<?php endif ?>
 						<?php the_title(); ?></h1>
 
