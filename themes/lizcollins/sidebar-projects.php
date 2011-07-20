@@ -47,9 +47,10 @@
 			     <ul class="xoxo"> 
 					<?php
 					$args = array(
-							'post_type' => 'page', 
-							'post_status' => 'publish',
-							'post_parent' => 24,  //this will change in the remote version
+							'post_type' 	=> 'page', 
+							'post_status' 	=> 'publish',
+							'post_parent' 	=> 24,  //this will change in the remote version
+							'post__not_in'	=> array( 40 ) //Knitting Nation ID, don't show Knitting Nation in this list. It is also a project
 							);
 						global $post;
 						$program_pages = get_posts($args);
