@@ -17,3 +17,7 @@ designed and added front page.
 
 2011-07-19
 Added highlighting to sidebar
+formatted, spacing, title, for content text section
+
+2011-07-20
+turned on Fancybox. It worked as the default for the slideshows.
