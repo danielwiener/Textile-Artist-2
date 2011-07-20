@@ -14,7 +14,8 @@ Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-backgr
 
 Page Background: #F8F3FA
 Logos, Menu, Headlines: #384D55
-Lighter Slate Blue for Menu, Sidebar: #98A1A9
+Lighter Slate Blue for Menu, Sidebar: #98A1A9 
+Lightest Slate Blue for Menu BG: #E2E1E8
 SockMonkey Red for Entry-Title AND text links: #D31924 
 
 ================================================================================  */ 
@@ -454,7 +455,7 @@ div.menu li {
 	top: 0;
 }
 #access ul ul a {
-	background: #B0B7C0;
+	background: #E2E1E8;
 	line-height: 1em;
 	padding: 10px;
 	width: 100px;
@@ -462,8 +463,8 @@ div.menu li {
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #B0B7C0;
-	color: #fff;
+	background: #E2E1E8;
+	color: #384D55;
 }
 #access ul li:hover > ul {
 	display: block;
@@ -472,14 +473,14 @@ div.menu li {
 #access ul li.current-menu-ancestor > a,
 #access ul li.current-menu-item > a,
 #access ul li.current-menu-parent > a {
-	color: #fff;
+	color: #384D55;
 }
 * html #access ul li.current_page_item a,
 * html #access ul li.current-menu-ancestor a,
 * html #access ul li.current-menu-item a,
 * html #access ul li.current-menu-parent a,
 * html #access ul li a:hover {
-	color: #fff;
+	color: #384D55;
 } 
 
 /* =Content
