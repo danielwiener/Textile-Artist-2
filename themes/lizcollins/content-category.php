@@ -10,7 +10,7 @@
  * @author dwiener
  */
 ?>
-
+  <hr />  
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if ( $wp_query->max_num_pages > 1 ) : ?>
 	<div id="nav-above" class="navigation">
@@ -45,16 +45,11 @@
 				<?php // twentyten_posted_on(); ?>
 			</div><!-- .entry-meta -->
 
-	<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
-			<div class="entry-summary">
-				<?php the_excerpt(); ?>
-			</div><!-- .entry-summary -->
-	<?php else : ?>
+
 			<div class="entry-content">
 				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?>
 				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
 			</div><!-- .entry-content -->
-	  <?php endif; ?>
 
 			<div class="entry-utility">
 			  
@@ -64,7 +59,7 @@
 		</div><!-- #post-## -->
 
 		<?php comments_template( '', true ); ?>
-
+<hr />
 
 
 <?php endwhile; // End the loop. Whew. ?>
