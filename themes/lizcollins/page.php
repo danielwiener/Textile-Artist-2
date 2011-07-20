@@ -12,8 +12,16 @@
  * @since Liz Collins 1.0
  */
 
-get_header(); ?>
-<?php get_sidebar('projects'); ?> 
+get_header(); ?> 
+<?php
+	global $post;
+	if ($post->post_parent == 24) {  //check to see if it is in Projects
+		get_sidebar('projects');
+	} elseif ($post->post_parent == 93) { //check to see if it is in Collections
+		get_sidebar('collections');	
+	}
+	 
+?> 
 		<div id="container">
 			<div id="content" role="main">
               
