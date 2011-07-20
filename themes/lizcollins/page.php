@@ -15,12 +15,12 @@
 get_header(); ?> 
 <?php
 	global $post;
-	if ($post->post_parent == 24) {  		//check to see if it is in Projects
+	if ($post->post_parent == 24 || $post->post_parent == 40) {	//check to see if it is in Projects or Knitting Nation
 		get_sidebar('projects');
-	} elseif ($post->post_parent == 93) { 	//check to see if it is in Collections
+	} elseif ($post->post_parent == 93) { 						//check to see if it is in Collections
 		get_sidebar('collections');	
 	}   else {
-		get_sidebar(); 						//for all other pages, e.g. About
+		get_sidebar(); 											//for all other pages, e.g. About
 	}
 ?> 
 
