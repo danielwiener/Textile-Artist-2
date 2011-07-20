@@ -36,7 +36,11 @@
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  
-						<h1 class="entry-title"><?php the_title(); ?></h1>
+						<h1 class="entry-title">
+						<?php if ($post->post_parent == 40): ?>
+						 Knitting Nation    
+						<?php endif ?>
+						<?php the_title(); ?></h1>
 
 					<div class="entry-content">
 						<?php the_content(); ?>
