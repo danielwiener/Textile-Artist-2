@@ -21,3 +21,4 @@ formatted, spacing, title, for content text section
 
 2011-07-20
 turned on Fancybox. It worked as the default for the slideshows.
+Added Collections sidebar

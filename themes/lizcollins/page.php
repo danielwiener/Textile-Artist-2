@@ -19,6 +19,8 @@ get_header(); ?>
 		get_sidebar('projects');
 	} elseif ($post->post_parent == 93) { //check to see if it is in Collections
 		get_sidebar('collections');	
+	}   else {
+		get_sidebar();
 	}
 	 
 ?> 
