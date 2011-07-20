@@ -152,7 +152,6 @@ h3#comments-title,
 h3#reply-title,
 #cancel-comment-reply-link,
 .form-allowed-tags,
-#site-info,
 #wp-calendar,
 .comment-meta,
 .comment-body tr th,
@@ -220,7 +219,6 @@ div.menu,
 #site-info {
 	float: left;
 	font-size: 14px;
-	font-weight: bold;
 	width: 700px;
 }
 #site-generator {
@@ -1393,19 +1391,28 @@ h3#reply-title {
 -------------------------------------------------------------- */
 
 #footer {
-	margin-bottom: 20px;
+	margin-bottom: 20px; 
+	background-color: #fff;
 }
 #colophon {
-	border-top: 4px solid #000;
+	border-top: 4px solid #98A1A9;
 	margin-top: -4px;
 	overflow: hidden;
-	padding: 18px 0;
+	padding: 5px 0;
 }
-#site-info {
-	font-weight: bold;
+#site-info { 
+	margin: 0 0 0 5px;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-style: italic;
+	
 }
-#site-info a {
-	color: #000;
+#site-info a:link, #site-info a:visited  {
+	color: #98A1A9;
+	text-decoration: none;
+} 
+
+#site-info a:hover, #site-info a:active  {
+	color: #384D55;
 	text-decoration: none;
 }
 #site-generator {
@@ -1413,7 +1420,6 @@ h3#reply-title {
 	position: relative;
 }
 #site-generator a {
-	background: url(images/wordpress.png) center left no-repeat;
 	color: #666;
 	display: inline-block;
 	line-height: 16px;
