@@ -27,7 +27,6 @@
 					</div><!-- .entry-content -->
 
 					<div class="entry-utility">
-						<?php twentyten_posted_in(); ?>
 						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-utility -->
 				</div><!-- #post-## -->
