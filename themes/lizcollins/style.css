@@ -1404,7 +1404,11 @@ h3#reply-title {
 
 #primary.veins {
 	background: #F8F3FA url('images/veins.jpg') no-repeat 0 0;
-}  
+} 
+
+#primary.projects_collections {
+	background: #F8F3FA url('images/projects_collections.jpg') no-repeat 0 0;
+} 
 
 
 

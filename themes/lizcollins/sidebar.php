@@ -9,7 +9,7 @@
 ?>       
 <?php global $post; ?>
 
-		<div id="primary" class="widget-area <?php echo $post->post_name; ?>" role="complementary">
+		<div id="primary" class="widget-area projects_collections" role="complementary">
 		   
 
 <?php
@@ -30,7 +30,7 @@
 					$args = array(
 							'post_type' 	=> 'page', 
 							'post_status' 	=> 'publish',
-							'post_parent' 	=> 24,  //this will change in the remote version
+							'post_parent' 	=> 24,  //this will change in the remote versio
 							);
 						global $post;
 						$program_pages = get_posts($args);
