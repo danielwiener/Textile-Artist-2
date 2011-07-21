@@ -1388,11 +1388,25 @@ h3#reply-title {
 
 #primary.two {
 	background: #F8F3FA url('images/two.jpg') no-repeat 0 0;
+} 
+
+#primary.three {
+	background: #F8F3FA url('images/three.jpg') no-repeat 0 0;
+} 
+
+#primary.four {
+	background: #F8F3FA url('images/four.jpg') no-repeat 0 0;
+} 
+
+#primary.five {
+	background: #F8F3FA url('images/five.jpg') no-repeat 0 0;
 }
 
 #primary.veins {
 	background: #F8F3FA url('images/veins.jpg') no-repeat 0 0;
-}
+}  
+
+
 
 #secondary {
 }
