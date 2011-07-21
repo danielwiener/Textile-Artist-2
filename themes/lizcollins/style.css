@@ -1038,6 +1038,7 @@ img.aligncenter {
 -------------------------------------------------------------- */
 #comments {
 	clear: both;
+	padding: 0 30px;
 }
 #comments .navigation {
 	padding: 0 0 18px 0;
