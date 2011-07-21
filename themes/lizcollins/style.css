@@ -744,6 +744,10 @@ body.page .edit-link {
 }
 #content .video-player {
 	padding: 0;
+} 
+
+#content .format-standard {
+	   padding: 0 30px;
 }
 
 /* =Front Page
