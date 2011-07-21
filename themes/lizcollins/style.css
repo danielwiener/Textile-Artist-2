@@ -1368,18 +1368,30 @@ h3#reply-title {
 }
 
 #primary { 
-	height: 590px;
-	border: 1px solid red; /*may have to change experimentally*/
+	height: 588px; /*may have to change experimentally*/ 
+	overflow: hidden;
 }  
 /* =Background Images for sidebar - I am going to add one of these for each image and then have the class change in the header.php file, I know this is slightly ackward, but I am adding these manually. Images have name of page.
 */
                                                                             
 #primary.reflective {
-	background: #F8F3FA url('images/reflective.jpg') no-repeat 0px 80px;  
+	background: #F8F3FA url('images/reflective.jpg') no-repeat top left;  
 }  
 
 #primary.sock-monkeys {
-	background: #F8F3FA url('images/sock-monkeys.jpg') no-repeat 0px 0px;
+	background: #F8F3FA url('images/sock-monkeys.jpg') no-repeat top left;
+} 
+
+#primary.one {
+	background: #F8F3FA url('images/one.jpg') no-repeat 0 0;
+}  
+
+#primary.two {
+	background: #F8F3FA url('images/two.jpg') no-repeat 0 0;
+}
+
+#primary.veins {
+	background: #F8F3FA url('images/veins.jpg') no-repeat 0 0;
 }
 
 #secondary {
