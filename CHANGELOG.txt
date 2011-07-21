@@ -24,3 +24,7 @@ turned on Fancybox. It worked as the default for the slideshows.
 Added Collections sidebar AND default sidebar
 styled footer.
 
+2011-07-21
+did most sidebar backgrounds
+empty Project and Collection pages that retrieve most recent page
+
