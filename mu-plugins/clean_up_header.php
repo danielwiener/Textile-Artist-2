@@ -44,6 +44,4 @@ remove_action('wp_head', 'parent_post_rel_link', 10, 0);
 //http://www.google-adsense-templates.co.uk/removing-wordpress-generator-version-and-other-code-from-the-head.html
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 //http://pixelpunk.co.uk/2010/01/disable-wordpress-built-in-canonical-url/
-remove_action('wp_head', 'rel_canonical');
-
- ?>  
+remove_action('wp_head', 'rel_canonical');  
