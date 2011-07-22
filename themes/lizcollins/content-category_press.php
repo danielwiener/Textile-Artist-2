@@ -1,6 +1,6 @@
 <?php
 /**
- * The displays the content for a projects page or a collections page.
+ * The displays the content for a press archive page as a grid of thumbnails.
  *
  * @package WordPress
  * @subpackage Liz Collins
