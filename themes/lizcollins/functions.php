@@ -121,4 +121,3 @@ function dw_add_js_scripts() {
 } 
 //also need to figure out how do this with less repitition, more elegantly
 add_action('init', 'dw_add_js_scripts');
-?> 
