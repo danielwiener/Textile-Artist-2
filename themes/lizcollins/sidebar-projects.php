@@ -20,7 +20,7 @@
 	 */
 		global $post;
 	   	$this_post_title = $post->post_title;
-        $knitting_nation_class = ($post->post_parent == 40 ) ? 'class="current_page"' : '' ;
+        $knitting_nation_class = ($post->post_parent == 40 || $post->ID == 40) ? 'class="current_page"' : '' ;
 ?>          
 
 		<h2 class="widget-title">Projects</h2> 
