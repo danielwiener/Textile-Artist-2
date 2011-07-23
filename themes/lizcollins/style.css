@@ -177,7 +177,7 @@ code {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 } 
 
-#site-title, #access .menu, #access div.menu ul, #access a, .widget-title, #main .widget-area, .entry-title, #content h1.page-title, .page-title span {
+#site-title, #access .menu, #access div.menu ul, #access a, .widget-title, #main .widget-area, .entry-title, #content h1.page-title, .page-title span, h1, h2, h3, h4, h5, h6 {
 	  font-family: ZillahModernRegular,"Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif !important; 
 }
 
@@ -532,7 +532,7 @@ div.menu li {
 #content h4,
 #content h5,
 #content h6 {
-	color: #000;
+	color: #384D55;
 	line-height: 1.5em;
 	margin: 0 0 20px 0;
 }
@@ -606,7 +606,7 @@ h1.page-title {
 }
 .entry-title a:link,
 .entry-title a:visited {
-	color: #000;
+	color: #384D55;
 	text-decoration: none;
 }
 .entry-title a:active,
