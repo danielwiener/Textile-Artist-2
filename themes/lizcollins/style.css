@@ -240,11 +240,12 @@ body {
 		line-height: 18px;
 	}
 	hr {
-		background-color: #e7e7e7;
+		background-color: #E2E1E8;
 		border: 0;
 		clear: both;
 		height: 1px;
 		margin-bottom: 18px;
+		width: 85%;
 	}
 
 	/* Text elements */

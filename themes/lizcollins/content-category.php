@@ -59,7 +59,7 @@
 		</div><!-- #post-## -->
 
 		<?php comments_template( '', true ); ?>
-<hr />
+<hr width="70%"/>
 
 
 <?php endwhile; // End the loop. Whew. ?>
