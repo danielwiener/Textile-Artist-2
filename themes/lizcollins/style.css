@@ -1249,11 +1249,11 @@ h3#reply-title {
 .widget-container {
 	margin: 0 0 18px 0;
 }
-.widget-title {
+.widget-title {  /*Projects and Collections main titles in sidebar*/
 	color: #98A1A9;
 	font-weight: normal;
 	font-style: italic;
-	font-size: 36px;
+	font-size: 34px;
 	padding: 0;
 	margin: 20px 0 15px 0;
 	text-transform: uppercase;
