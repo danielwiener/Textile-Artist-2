@@ -1455,6 +1455,10 @@ h3#reply-title {
 
 #primary.griz {
 	background: #F8F3FA url('images/griz.jpg') no-repeat 0 0;
+}  
+
+#primary.walking-wounded {
+	background: #F8F3FA url('images/walking-wounded.jpg') no-repeat 0 0;
 }
 
 #secondary {
