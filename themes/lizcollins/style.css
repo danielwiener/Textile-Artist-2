@@ -1433,6 +1433,30 @@ h3#reply-title {
 	background: #F8F3FA url('images/spring-2003.jpg') no-repeat 0 0;
 }
 
+#primary.fall-2002 {
+	background: #F8F3FA url('images/fall-2002.jpg') no-repeat 0 0;
+}
+
+#primary.spring-2002 {
+	background: #F8F3FA url('images/spring-2002.jpg') no-repeat 0 0;
+} 
+
+#primary.fall-2001 {
+	background: #F8F3FA url('images/fall-2001.jpg') no-repeat 0 0;
+}
+
+#primary.spring-2001 {
+	background: #F8F3FA url('images/spring-2001.jpg') no-repeat 0 0;
+}  
+
+#primary.fall-2000 {
+	background: #F8F3FA url('images/fall-2000.jpg') no-repeat 0 0;
+} 
+
+#primary.griz {
+	background: #F8F3FA url('images/griz.jpg') no-repeat 0 0;
+}
+
 #secondary {
 }
 
