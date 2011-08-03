@@ -1421,7 +1421,17 @@ h3#reply-title {
 	background: #F8F3FA url('images/projects_collections.jpg') no-repeat 0 0;
 } 
 
+#primary.spring-2004 {
+	background: #F8F3FA url('images/spring-2004.jpg') no-repeat 0 0;
+}
 
+#primary.fall-2003 {
+	background: #F8F3FA url('images/fall-2003.jpg') no-repeat 0 0;
+}
+
+#primary.spring-2003 {
+	background: #F8F3FA url('images/spring-2003.jpg') no-repeat 0 0;
+}
 
 #secondary {
 }

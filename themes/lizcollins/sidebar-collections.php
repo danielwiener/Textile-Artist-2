@@ -31,6 +31,9 @@
 							'post_type' 	=> 'page', 
 							'post_status' 	=> 'publish',
 							'post_parent' 	=> 93,  //this will change in the remote version
+							'numberposts'	=> -1,
+							'orderby'		=> 'post_date',
+							'order'			=> 'DESC'
 							);
 						global $post;
 						$program_pages = get_posts($args);
