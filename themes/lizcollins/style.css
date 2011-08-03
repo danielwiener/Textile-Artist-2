@@ -1357,12 +1357,12 @@ h3#reply-title {
 	
 #main .widget-area ul.xoxo li a:link, #main .widget-area ul.xoxo li a:visited {
 	color: #98A1A9;
-	font-size: 20px;
+	font-size: 18px;
 	letter-spacing: .03em;
 	font-weight: normal;
 	text-transform: uppercase;
 	margin-left: 8px;
-	line-height: 26px;
+	line-height: 26px; 
 } 
 
 #main .widget-area ul.xoxo li a:hover, #main .widget-area ul.xoxo li a:active, #main .widget-area ul.xoxo li .current {
