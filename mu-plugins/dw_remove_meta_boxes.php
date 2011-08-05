@@ -38,11 +38,11 @@ function dw_remove_many_meta_boxes() {
 }  // remove meta boxes function
 add_action( 'do_meta_boxes' , 'dw_remove_many_meta_boxes' );
 
-add_action( 'admin_menu', 'my_remove_menu_pages' );
+add_action( 'admin_menu', 'dw_remove_menu_pages' );
 
 
 // remove links and tools menus
-function my_remove_menu_pages() {
+function dw_remove_menu_pages() {
 			 
 	global $current_user;
 	get_currentuserinfo();			
