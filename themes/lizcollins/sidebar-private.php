@@ -9,7 +9,7 @@
 ?>       
 <?php global $post; ?>
 
-		<div id="primary" class="widget-area private" role="complementary">
+		<div id="private-widget" class="private" role="complementary">
 		   
 
 <?php

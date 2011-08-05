@@ -119,7 +119,6 @@ DESCRIPTION: One centered column with no sidebar
 */
 
 .one-column #content {
-	margin: 0 auto;
 	width: 640px;
 }
 
@@ -1372,7 +1371,18 @@ h3#reply-title {
 #main .widget-area li.current_page a:link, #main .widget-area li.current_page a:visited, #main .widget-area h3.current_page a:link, #main .widget-area h3.current_page a:visited {
 	color: #384D55 !important;
  /*   border: 1px solid #999;*/ 
-}
+} 
+
+#main #private-widget .private ul.xoxo li a:link, #main #private-widget .private ul.xoxo li a:visited {
+	color: #666;
+	font-size: 10px !important;
+	font-weight: normal;
+	margin-left: 0;
+ 	font-family: Arial, "MS Trebuchet", sans-serif; 
+	text-transform: none; 
+} 
+
+
 
 #primary { 
 	height: 588px; /*may have to change experimentally*/ 
@@ -1461,12 +1471,14 @@ h3#reply-title {
 	background: #F8F3FA url('images/walking-wounded.jpg') no-repeat 0 0;
 }
 
+
 #secondary {
 }
 
 /* Footer widget areas */
 #footer-widget-area {
 }
+
 
 
 /* =Footer
