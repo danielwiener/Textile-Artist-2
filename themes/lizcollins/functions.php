@@ -162,4 +162,4 @@ add_role('site_manager', 'Site Manager', array(
 		'gravityforms_export_entries'   	=>		 true,
 		'gravityforms_view_entries'   		=>		 true,
 		'gravityforms_view_entry_notes'   	=>		 true
-));
+));?>
