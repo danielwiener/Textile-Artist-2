@@ -52,7 +52,3 @@ function dw_remove_menu_pages() {
 			remove_menu_page('tools.php');
 		} //end if current user.	
 } //end function
-
-
-?> 
-
