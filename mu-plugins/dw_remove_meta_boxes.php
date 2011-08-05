@@ -28,7 +28,7 @@ function dw_remove_many_meta_boxes() {
 		    remove_meta_box( 'postcustom' , 'post' , 'normal' );// - Custom fields metabox.
 		    remove_meta_box( 'postexcerpt' , 'post' , 'normal' );// - Excerpt metabox.
 		    remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' );// - Trackbacks metabox.
-		    remove_meta_box( 'postimagediv' , 'post' , 'side' );// - Featured image metabox.
+		   // remove_meta_box( 'postimagediv' , 'post' , 'side' );// - Featured image metabox.
 		    remove_meta_box( 'formatdiv' , 'post' , 'side' );// - Formats metabox.
 		    remove_meta_box( 'tagsdiv-post_tag' , 'post' , 'side' );// - Tags metabox.
 		  //  remove_meta_box( 'categorydiv' , 'post' , 'side' );// - Categories metabox. 
@@ -48,7 +48,7 @@ function my_remove_menu_pages() {
 	get_currentuserinfo();			
 	
 		if($current_user->user_login != 'danielwiener') { 
-			//remove_menu_page('link-manager.php');
+			remove_menu_page('link-manager.php');
 			remove_menu_page('tools.php');
 		} //end if current user.	
 } //end function
