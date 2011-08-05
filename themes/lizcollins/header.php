@@ -69,3 +69,8 @@
 	</div><!-- #header -->
 
 	<div id="main">
+     <?php
+     global $wp_roles;
+	echo '<pre>' . var_dump($wp_roles) . '</pre>';
+	
+     ?>
