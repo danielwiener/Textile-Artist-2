@@ -120,4 +120,46 @@ function dw_add_js_scripts() {
 	  }       
 } 
 //also need to figure out how do this with less repitition, more elegantly
-add_action('init', 'dw_add_js_scripts');
+add_action('init', 'dw_add_js_scripts');   
+
+add_role('site_manager', 'Site Manager', array( 
+		'moderate_comments'					=>		 true,
+        'manage_categories'					=>		 true,
+        'manage_links'	   					=>		 false,
+        'upload_files'						=>		 true,
+        'unfiltered_html'					=>		 true,
+        'edit_posts'	   	    			=>		 true,
+        'edit_others_posts'					=>		 true,
+        'edit_published_posts'				=>		 true,
+        'publish_posts'						=>		 true,
+        'edit_pages'						=>		 true,
+        'read'								=>		 true,
+        'level_7'							=>		 true,
+        'level_6'							=>		 true,
+        'level_5'							=>		 true,
+        'level_4'							=>		 true,
+        'level_3'							=>		 true,
+        'level_2'							=>		 true,
+        'level_1'							=>		 true,
+        'level_0'							=>		 true,
+        'edit_others_pages'					=>		 true,
+        'edit_published_pages'  			=>		 true,
+        'publish_pages'						=>		 true,
+        'delete_pages'						=>		 true,
+        'delete_others_pages'				=>		 true,
+        'delete_published_pages' 			=>		 true,
+        'delete_posts'						=>		 true,
+        'delete_others_posts'				=>		 true,
+        'delete_published_posts'			=>		 true,
+        'delete_private_posts'				=>		 false,
+        'edit_private_posts'				=>		 false,
+        'read_private_posts'				=>		 true,
+        'delete_private_pages'				=>		 false,
+        'edit_private_pages'				=>		 false,
+        'read_private_pages'				=>		 true,
+		'gravityforms_edit_entries'   		=>		 true,
+		'gravityforms_edit_entry_notes'   	=>		 true,
+		'gravityforms_export_entries'   	=>		 true,
+		'gravityforms_view_entries'   		=>		 true,
+		'gravityforms_view_entry_notes'   	=>		 true
+));
