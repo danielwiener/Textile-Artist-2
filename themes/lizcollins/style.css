@@ -1317,6 +1317,7 @@ h3#reply-title {
 /* Main sidebars */ 
 #main .widget-area {
 	padding-left: 15px;
+   margin-bottom: 10px;
 }
 
 #main .widget-area h3, #main .widget-area h3 a:link,  #main .widget-area h3 a:visited { 
