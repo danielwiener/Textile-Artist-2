@@ -24,7 +24,7 @@
 
 			<div id="site-info">
 				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php bloginfo( 'name' ); ?> &copy;<?php echo date('Y'); ?></a> | <a href="<?php bloginfo('url') ?>/projects/knitting-nation">Projects<a/> | <a href="<?php bloginfo('url') ?>/collections/spring-2004">Collections</a> | <a href="<?php bloginfo('url') ?>/contact" title="Contact Liz Collins">Contact</a> | <a href="" title="Credits" rel="generator">Credits</a>
+					<?php bloginfo( 'name' ); ?> &copy;<?php echo date('Y'); ?></a> | <a href="<?php bloginfo('url') ?>/projects/knitting-nation">Projects<a/> | <a href="<?php bloginfo('url') ?>/collections/intro">Collections</a> | <a href="<?php bloginfo('url') ?>/contact" title="Contact Liz Collins">Contact</a> | <a href="" title="Credits" rel="generator">Credits</a>
 				
 			</div><!-- #site-info -->
 
