@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for Project or Collection pages for text and images only. Not Image Grid.
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -28,7 +28,7 @@ get_header(); ?>
 			<div id="content" role="main">
               
 			<?php
-				get_template_part( 'content', 'page' );
+				get_template_part( 'content', 'page_text_image' );
 			?>
 			</div><!-- #content -->
 		</div><!-- #container -->
