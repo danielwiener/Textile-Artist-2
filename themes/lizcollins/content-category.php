@@ -10,7 +10,7 @@
  * @author dwiener
  */
 ?>
-  <hr />  
+<hr />  
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if ( $wp_query->max_num_pages > 1 ) : ?>
 	<div id="nav-above" class="navigation">
@@ -34,17 +34,50 @@
 	/* Start the Loop.
 	 *
 	 * Without further ado, the loop:
-	 */ ?>
+	 */ 
+	
+	$categories = get_categories('include=1');
+	$total_in_news = '';
+	foreach($categories as $category) {
+	$total_in_news += $category->count;
+	}
+	?>
 <?php while ( have_posts() ) : the_post(); ?>
+           <?php 
 
+				if ($total_in_news > 1): ?>
+           	 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+
+					<div class="entry-content">
+					   <?php  if( has_post_thumbnail() ) {
+							the_post_thumbnail( 'thumbnail', array('class' => 'alignleft') );
+						} else {
+						$args = array(
+							'order'          => 'ASC',
+							'post_type'      => 'attachment',
+							'post_parent'    => $post->ID,
+							'post_mime_type' => 'image',
+							'post_status'    => null,
+							'numberposts'    => 1,
+						);
+						$attachments = get_posts($args);
+						if ($attachments) {
+							foreach ($attachments as $attachment): ?> 
+                           <a href="<?php the_permalink(); ?>"><img src="<?php echo wp_get_attachment_thumb_url( $attachment->ID );  ?>" class="alignleft" /></a>            						
+						    <?php endforeach; 
+					   }
+					}?>
+						<?php the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?>
+					</div><!-- .entry-content -->
+				</div><!-- #post-## -->
+
+				<?php // comments_template( '', true ); ?>
+		<hr width="70%"/>
+           <?php else: ?>
    
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-
-			<div class="entry-meta">
-				<?php // twentyten_posted_on(); ?>
-			</div><!-- .entry-meta -->
-
 
 			<div class="entry-content">
 				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?>
@@ -58,9 +91,9 @@
 			</div><!-- .entry-utility -->
 		</div><!-- #post-## -->
 
-		<?php comments_template( '', true ); ?>
+		<?php // comments_template( '', true ); ?>
 <hr width="70%"/>
-
+         <?php endif; ?>  
 
 <?php endwhile; // End the loop. Whew. ?>
 
