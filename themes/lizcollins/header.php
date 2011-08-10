@@ -14,12 +14,17 @@
 	/*
 	 * Print the <title> tag based on what is being viewed.
 	 */
-	global $page, $paged;
-
-	wp_title( '|', true, 'right' );
-
+	global $page, $paged;  
+	
 	// Add the blog name.
-	bloginfo( 'name' );
+	bloginfo( 'name' ); ?>
+	<?php if ($post->post_parent == 40): ?>
+	 | Knitting Nation    
+	<?php endif ?>
+     <?php
+	wp_title( '|', true, 'left' );
+
+  
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
