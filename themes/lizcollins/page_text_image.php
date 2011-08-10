@@ -2,6 +2,7 @@
 /**
  * The template for Project or Collection pages for text and images only. Not Image Grid.
  *
+ *Template Name: Text and Image
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site will use a
