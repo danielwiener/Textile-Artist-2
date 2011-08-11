@@ -112,7 +112,13 @@ function dw_add_js_scripts() {
 		   // register your script location, dependencies and version
 		   //then if front page add the text overlay js
 		   // can't get the is_front_page() to work. don't know why. try again later 
-  
+		wp_register_script('dw_qtip',
+		       get_bloginfo('stylesheet_directory') . '/js/dw_qtip.js',
+		       array('qtip'),
+		       '1.0' ); 
+		wp_enqueue_script('dw_qtip');           
+
+
 		   wp_register_script('dw_text_overlay',
 		       get_bloginfo('stylesheet_directory') . '/js/dw_text_overlay.js',
 		       array('jquery'),
