@@ -81,7 +81,7 @@ function twentyten_setup() {
 	) );
 
 	//I will change this as needed and add more sizes
-	set_post_thumbnail_size( 190, 190, true ); 	
+	set_post_thumbnail_size( 190, 190, true );	
 }
 endif;
 
