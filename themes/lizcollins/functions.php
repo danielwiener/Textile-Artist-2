@@ -103,20 +103,22 @@ function dw_add_js_scripts() {
 		wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false);
 		wp_enqueue_script('jquery'); 
 	
-		   // wp_register_script('dw_slideshow',
-		   // 		       get_bloginfo('stylesheet_directory') . '/js/dw_slideshow.js',
-		   // 		       array('jquery'),
-		   // 		       '1.0' ); 
-		   // enqueue the script
-		   // wp_enqueue_script('dw_slideshow');
+		   wp_register_script('qtip',
+		   		   		       get_bloginfo('stylesheet_directory') . '/js/jquery.qtip.min.js',
+		   		   		       array('jquery')
+   								); 
+		   		   //enqueue the script
+		   		   wp_enqueue_script('qtip'); 
 		   // register your script location, dependencies and version
-		   //then if press page add the text overlay js
-		   // can't get the is_page('press') to work. don't know why. try again later
+		   //then if front page add the text overlay js
+		   // can't get the is_front_page() to work. don't know why. try again later 
+  
 		   wp_register_script('dw_text_overlay',
 		       get_bloginfo('stylesheet_directory') . '/js/dw_text_overlay.js',
 		       array('jquery'),
 		       '1.0' ); 
 		wp_enqueue_script('dw_text_overlay');
+	
 	  }       
 } 
 //also need to figure out how do this with less repitition, more elegantly

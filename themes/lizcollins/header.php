@@ -23,16 +23,14 @@
 	<?php endif ?>
      <?php
 	wp_title( '|', true, 'left' );
-
-  
-
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> 
+<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/jquery.qtip.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
 	/* We add some JavaScript to pages with the comment form
@@ -48,8 +46,8 @@
 	 */
 	wp_head();
 ?>  
-<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/jquery.qtip.min.css" type="text/css" media="screen" title="no title" charset="utf-8"> 
-<script type='text/javascript' src='<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.qtip.pack.js'></script>
+ 
+
 <script type="text/javascript"> 
 jQuery.noConflict();
 jQuery(document).ready(function($) {
@@ -64,7 +62,6 @@ jQuery(document).ready(function($) {
 	      classes: 'ui-tooltip-dark ui-tooltip-cluetip'
 	   }
 	});
-	console.log($('a#credits').qtip());
 });
 </script>
 
