@@ -47,7 +47,27 @@
 	 * as styles, scripts, and meta tags.
 	 */
 	wp_head();
-?>
+?>  
+<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/jquery.qtip.min.css" type="text/css" media="screen" title="no title" charset="utf-8"> 
+<script type='text/javascript' src='<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.qtip.pack.js'></script>
+<script type="text/javascript"> 
+jQuery.noConflict();
+jQuery(document).ready(function($) {
+   // Match all <A/> links with a title tag and use it as the content (default).
+   $('a#credits[title]').qtip( {
+	       position: {
+	      my: 'bottom center', 
+	      at: 'top center'
+	   },
+	   style: {
+	      tip: true,
+	      classes: 'ui-tooltip-dark ui-tooltip-cluetip'
+	   }
+	});
+	console.log($('a#credits').qtip());
+});
+</script>
+
 </head>
 
 <body <?php body_class(); ?>>
