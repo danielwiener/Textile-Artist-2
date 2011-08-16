@@ -90,6 +90,26 @@ function twentyten_admin_header_style() {
 // do nothing
 }
 endif;
+ 
+// ========================================================================
+// =  Remove Private from page title. http://wp-snippets.com/290/remove-private-or-protected-before-title/ =
+// ========================================================================
+ 
+function the_title_trim($title) {
+        $title = attribute_escape($title);
+        $findthese = array(
+                '#Protected: #', // Notice the blank space after Protected:
+                '#Private: #' // Notice again, otherwise the title get pushed.
+        );
+        $replacewith = array(
+                '', // What to replace "Protected: " with
+                '' // What to replace "Private: " with
+        );
+        $title = preg_replace($findthese, $replacewith, $title);
+        return $title;
+} add_filter('the_title', 'the_title_trim');
+
+
 
 // smart jquery inclusion 
 //http://digwp.com/2010/03/wordpress-functions-php-template-custom-functions/ 
