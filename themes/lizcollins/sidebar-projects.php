@@ -30,7 +30,8 @@
 			$args = array(
 					'post_type'		=> 'page', 
 					'post_status'	=> 'publish',
-					'post_parent'	=> 40,  //this will change in the remote version
+					'post_parent'	=> 40,  //this will change in the remote version 
+					'numberposts'	=> -1,
 					'orderby'		=> 'menu_order',
 					'order'			=> 'ASC'
 					);
