@@ -52,7 +52,8 @@
 							'post_status' 	=> 'publish',
 							'post_parent' 	=> 24,  //this will change in the remote version
 							'post__not_in'	=> array( 40 ), //Knitting Nation ID, don't show Knitting Nation in this list. It is also a project
-							'orderby'		=> 'title',
+							'orderby'		=> 'title', 
+							'numberposts'	=> -1,
 							'order'			=> 'ASC'
 							);
 						global $post;
