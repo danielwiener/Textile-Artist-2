@@ -115,9 +115,9 @@ function the_title_trim($title) {
 //http://digwp.com/2010/03/wordpress-functions-php-template-custom-functions/ 
 function dw_add_js_scripts() {
 	if (!is_admin()) {
-		wp_deregister_script('jquery');
-		wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false);
-		wp_enqueue_script('jquery'); 
+		// wp_deregister_script('jquery');
+		// wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false);
+		// wp_enqueue_script('jquery'); 
 	
 		   wp_register_script('qtip',
 		   		   		       get_bloginfo('stylesheet_directory') . '/js/jquery.qtip.min.js',
@@ -144,7 +144,13 @@ function dw_add_js_scripts() {
 	  }       
 } 
 //also need to figure out how do this with less repitition, more elegantly
-add_action('init', 'dw_add_js_scripts');   
+add_action('init', 'dw_add_js_scripts');  
+
+add_action('after_setup_theme','my_add_role_function');
+
+function my_add_role_function(){
+    $roles_set = get_option('my_roles_are_set');
+    if(!$roles_set){ 
 
 add_role('site_manager', 'Site Manager', array( 
 		'moderate_comments'					=>		 true,
@@ -182,8 +188,54 @@ add_role('site_manager', 'Site Manager', array(
         'edit_private_pages'				=>		 false,
         'read_private_pages'				=>		 true,
 		'gravityforms_edit_entries'   		=>		 true,
+		'update_themes'						=>		true,
+		'switch_themes'						=>		 true,
+		'edit_theme_options'				=>		 true,
 		'gravityforms_edit_entry_notes'   	=>		 true,
 		'gravityforms_export_entries'   	=>		 true,
 		'gravityforms_view_entries'   		=>		 true,
-		'gravityforms_view_entry_notes'   	=>		 true
-));?>
+		'gravityforms_view_entry_notes'   	=>		 true,
+
+));
+
+update_option('my_roles_are_set',true);
+    }
+}
+
+function add_theme_caps() {
+    // gets the author role
+    $role = get_role( 'site_manager' );
+
+    // This only works, because it accesses the class instance.
+    // would allow the author to edit others' posts for current theme only
+    $role->add_cap( 'edit_theme_options' ); 
+}
+add_action( 'admin_init', 'add_theme_caps');
+
+/**
+ * Adds theme/plugin custom images sizes added with add_image_size() to the image uploader/editor.  This 
+ * allows users to insert these images within their post content editor.
+ *
+ * @since Hybrid 1.3.0 - taken from Hybrid
+ * @access private
+ * @param array $sizes Selectable image sizes.
+ * @return array $sizes
+ */
+function dw_image_size_names_choose( $sizes ) {
+
+	/* Get all intermediate image sizes. */
+	$intermediate_sizes = get_intermediate_image_sizes();
+	$add_sizes = array();
+
+	/* Loop through each of the intermediate sizes, adding them to the $add_sizes array. */
+	foreach ( $intermediate_sizes as $size )
+		$add_sizes[$size] = $size;
+
+	/* Merge the original array, keeping it intact, with the new array of image sizes. */
+	$sizes = array_merge( $add_sizes, $sizes );
+
+	/* Return the new sizes plus the old sizes back. */
+	return $sizes;
+}
+
+?>
