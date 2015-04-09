@@ -1641,3 +1641,27 @@ code {
 		border: none;
 	}
 }
+
+/* =additions for responsive DW
+-------------------------------------------------------------- */
+
+@media (max-width:360px) {
+	#container, #content {
+		width: 320px;
+	}
+	
+	#access .menu-header,
+	div.menu,
+	#colophon,
+	#branding,
+	#main,
+	#wrapper {
+		margin: 0 auto;
+		width: 360px;
+	}
+	
+	.hentry {
+	margin:	20px 5px 48px 5px;
+	}
+	
+}
