@@ -9,3 +9,6 @@ themes/index.php
 plugins/*
 index.php
 /themes/lizcollins/fonts/*
+/themes/liz_responsive/js/*
+/themes/liz_responsive/fonts/*
+/themes/liz_responsive/css/*

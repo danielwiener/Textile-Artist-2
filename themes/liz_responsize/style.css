@@ -1,0 +1,283 @@
+/*
+Theme Name: Daniel Wiener using Bootstrap
+Theme URI: http://danielwiener.com
+Author: Daniel and Bootstrap
+Author URI: https://wordpress.org/
+Description: Trying to make artist site using bootstrap from scratch.
+Version: 1.0
+License: don't know
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: dw_bootstrap
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+ /**
+ * 14.0 Media
+ */
+
+.site .avatar {
+	border-radius: 50%;
+}
+
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+audio,
+canvas {
+	display: inline-block;
+}
+
+embed,
+iframe,
+object,
+video {
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+p > embed,
+p > iframe,
+p > object,
+p > video {
+	margin-bottom: 0;
+}
+
+.wp-audio-shortcode,
+.wp-video,
+.wp-playlist.wp-audio-playlist {
+	font-size: 15px;
+	font-size: 1.5rem;
+	margin-top: 0;
+	margin-bottom: 1.6em;
+}
+
+.wp-playlist.wp-playlist {
+	padding-bottom: 0;
+}
+
+.wp-playlist .wp-playlist-tracks {
+	margin-top: 0;
+}
+
+.wp-playlist-item .wp-playlist-caption {
+	border-bottom: 0;
+	padding: 10px 0;
+}
+
+.wp-playlist-item .wp-playlist-item-length {
+	top: 10px;
+}
+
+
+/**
+ * 14.1 Captions
+ */
+
+.wp-caption {
+	margin-bottom: 1.6em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0;
+}
+
+.wp-caption-text {
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+	font-family: "Noto Sans", sans-serif;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+
+
+/**
+ * 14.2 Galleries
+ */
+
+.gallery {
+	margin-bottom: 1.6em;
+}
+
+.gallery-item {
+	display: inline-block;
+	padding: 1.79104477%;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-icon img {
+	margin: 0 auto;
+}
+
+.gallery-caption {
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+	display: block;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+
+/*Daniel Added*/
+.content-area {
+	padding-top: 50px; /*added for content to be below the menu*/
+}
+
+.home img {
+	padding-top: 20px;
+}
+
+.redbox {
+	border: 1px solid red;
+}
+
+.greenbox {
+	border: 1px solid green;
+}
+
+.dw_image_nav a:link, .dw_image_nav a:visited {
+	color: #000;
+}
+
+.dw_image_nav a:hover, .dw_image_nav a:active {
+	color: #999 !important;
+	text-decoration: underline;
+}
+
+.site-main .thumbnail {
+	border: none;
+}
+
+.navbar-default {
+    background-color: rgba(252, 252, 250, 0.97) !important;
+	font-family: "freight-sans-pro","Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.navbar-brand {
+	font-size: 1.5em !important;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+font-family: "freight-sans-pro","Helvetica Neue", Helvetica, Arial, sans-serif !important;
+font-weight: bold;	
+}
+
+h1.page-title {
+	font-size: 26px;
+	color: #666;
+	font-weight: 300;
+}
+
+/**
+ * 7.0 Accessibility
+ */
+
+/* Text meant only for screen readers */
+.says,
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+}
+
+/* must have higher specificity than alternative color schemes inline styles */
+.site .skip-link {
+	background-color: #f1f1f1;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+	color: #21759b;
+	display: block;
+	font: bold 14px/normal "Noto Sans", sans-serif;
+	left: -9999em;
+	outline: none;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	text-transform: none;
+	top: -9999em;
+}
+
+.logged-in .site .skip-link {
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	font: bold 14px/normal "Open Sans", sans-serif;
+}
+
+.site .skip-link:focus {
+	clip: auto;
+	height: auto;
+	left: 6px;
+	top: 7px;
+	width: auto;
+	z-index: 100000;
+}
