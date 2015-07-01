@@ -34,7 +34,8 @@ get_header(); ?>
 						'post_status'	=> 'publish',
 						'portfolios'			=> $this_portfolio->slug
 					);
-					$portfolio_query = new WP_Query( $portfolio_args ); 
+					$portfolio_query = new WP_Query( $portfolio_args );
+					// print_r($portfolio_query); 
 				/* Start the Loop */ ?>
 				<div  class="row">
 				<?php while ( $portfolio_query->have_posts() ) : $portfolio_query->the_post(); ?>
