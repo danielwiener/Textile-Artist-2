@@ -132,10 +132,11 @@ add_action( 'wp_enqueue_scripts', 'dw_bootstrap_scripts' );
  * Navwalker
  */
 
-
-require( get_template_directory() . '/lib/wp_bootstrap_navwalker.php' );
-require( get_template_directory() . '/lib/dw_custom_taxonomies.php' );
 require( get_template_directory() . '/lib/dw_custom_post_types.php' );
+require( get_template_directory() . '/lib/dw_custom_taxonomies.php' );
+require( get_template_directory() . '/lib/wp_bootstrap_navwalker.php' );
+
+
 
 
 // http://stackoverflow.com/questions/20473004/how-to-add-automatic-class-in-image-for-wordpress-post
